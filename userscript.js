@@ -9,8 +9,6 @@
 // ==/UserScript==
 
 $(function () {
-    var current = window.location.href;
-
 	function insertAtCaret(areaId, text) {
 		var txtarea = document.getElementById(areaId);
 		var scrollPos = txtarea.scrollTop;
