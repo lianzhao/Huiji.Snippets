@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Huiji.Snippets
+// @name         Huiji.Snippets.Coppermind
 // @namespace    Huiji
 // @version      0.1
 // @description  code snippets for huiji wiki editors
