@@ -53,7 +53,7 @@ $(function () {
 		var tag = $('<span class="label">' + displayText + '</span>').click(function () {
 			insertAtCaret('wpTextbox1', text)
 		});
-		$('.group-insert').append(tag);
+		$('.section-advanced > .group-insert').append(tag);
 	}
 
     window.setTimeout(function () {
