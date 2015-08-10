@@ -11,7 +11,7 @@
 $(function () {
     var current = window.location.href;
 
-	window.insertAtCaret = function (areaId, text) {
+	function insertAtCaret(areaId, text) {
 		var txtarea = document.getElementById(areaId);
 		var scrollPos = txtarea.scrollTop;
 		var strPos = 0;
@@ -45,7 +45,18 @@ $(function () {
 		txtarea.scrollTop = scrollPos;
 	}
 
+    function insertItem(text, displayText) {
+		if (!displayText) {
+			displayText = text;
+		}
+
+		var tag = $('<span class="label">' + displayText + '</span>').click(function () {
+			insertAtCaret('wpTextbox1', text)
+		});
+		$('.group-insert').append(tag);
+	}
+
     window.setTimeout(function () {
-        $('.group-insert').append('<a href="#" onclick="window.insertAtCaret(\'wpTextbox1\',\'{{CmPermission}}\');return false;">{{CmPermission}}</a>');
+        insertItem('{{CmPermission}}')
     }, 3000);
 });
