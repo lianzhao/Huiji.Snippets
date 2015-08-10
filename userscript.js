@@ -53,6 +53,17 @@ $(function () {
         });
         $('#insertItems').append(tag);
     }
+	
+	function insertItemToGroup(group, text, displayText) {
+        if (!displayText) {
+            displayText = text;
+        }
+
+        var tag = $('<li><button type="button" class="btn btn-default btn-xs">' + displayText + '</button></li>').click(function () {
+            insertAtCaret('wpTextbox1', text)
+        });
+        group.append(tag);
+	}
 
     function createGroup(id, displayText) {
         var group = toMultiLineString(function () {/*
@@ -67,7 +78,6 @@ $(function () {
   */}).replace('idPlaceholder', id)
 			.replace('displayTextPlaceHolder', displayText);
         $('#insertItems').append(group);
-        return group;
     }
 
     function toMultiLineString(raw) {
@@ -83,5 +93,80 @@ $(function () {
         insertItem('__TOC__', 'TOC');
 
         var infoboxDropDown = createGroup('infoboxDropDown', 'Infobox');
+		
+		var infoboxCharacter = toMultiLineString(function(){
+			/*{{Infobox character
+| 人名       = 
+| 分类       = 
+| 图像	         = 
+| 图像信息  = 
+| 发音         = 
+| 别名         = 
+| 其他译名     =  
+| 性别        =   
+| 头衔        =   
+| 出生时间     =                     
+| 出生地点     =     
+| 死亡时间    =  
+| 死亡地点     = 
+| 阵营        = 
+| 种族        =        
+| 民族        =       
+| 文化        =         
+| 语言        =         
+| 宗教        = 
+| 职业        =     
+| 发色        = 
+| 瞳色        = 
+| 肤色        = 
+| 服装        = 
+| 饰品        = 
+| 武器        = 
+| 工具        = 
+| 坐骑        = 
+| 其他补充    = 
+| 阶职        = 
+| 体系        = 
+| 能力        = 
+| 契约对象    = 
+| 家族        = 
+| 祖先        = 
+| 父亲        = 
+| 母亲        = 
+| 亲戚        = 
+| 同辈        = 
+| 配偶        = 
+| 子嗣        = 
+| 继承人      = 
+| 后代        = 
+| 恋人        = 
+| 好友        = 
+| 仇敌        = 
+| 上级        = 
+| 下属        = 
+| 师从        = 
+| 学徒        = 
+| 侍从        = 
+| 村镇        = 
+| 城市        = 
+| 国家        = 
+| 大陆        = 
+| 世界        = 
+| 小说        = 
+| 漫画        = 
+| 图画小说    = 
+| 动画        = 
+| 电影        = 
+| 电视剧      = 
+| 电子游戏    = 
+| 桌上游戏    = 
+| 电影演员    =
+| 电视剧演员  =
+| 动画配音    =
+| 游戏配音    =
+
+}}
+*/});
+        insertItemToGroup($('#infoboxDropDown'), infoboxCharacter, 'infobox character');
     }, 3000);
 });
