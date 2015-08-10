@@ -48,13 +48,17 @@ $(function () {
 			displayText = text;
 		}
 
-		var tag = $('<span class="label">' + displayText + '</span>').click(function () {
+		var tag = $('<button type="button" class="btn btn-default">' + displayText + '</button>').click(function () {
 			insertAtCaret('wpTextbox1', text)
 		});
-		$('.section-advanced > .group-insert').append(tag);
+		$('#insertItems').append(tag);
 	}
 
     window.setTimeout(function () {
-        insertItem('{{CmPermission}}')
+		$('.section-advanced > .group-insert').append('<div id="insertItems" class="btn-group btn-group-xs" role="group"></div>')
+        insertItem('{{需要翻译|~~~~}}', '{{需要翻译}}');
+        insertItem('{{需要帮助}}');
+        insertItem('{{CmPermission}}');
+        insertItem('__TOC__', 'TOC');
     }, 3000);
 });
