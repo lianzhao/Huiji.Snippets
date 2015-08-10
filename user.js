@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Huiji.Snippets.Coppermind
 // @namespace    Huiji
-// @version      0.1
+// @version      0.2
 // @description  code snippets for huiji wiki editors
 // @author       lianzhao
 // @match        http://coppermind.huiji.wiki/index.php?title=*&action=edit
