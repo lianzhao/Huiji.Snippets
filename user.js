@@ -87,10 +87,12 @@ $(function () {
 
     window.setTimeout(function () {
         $('.section-advanced > .group-insert').append('<div id="insertItems" class="btn-group btn-group-xs" role="group"></div>');
-        insertItem('{{需要翻译|~~~~}}', '{{需要翻译}}');
-        insertItem('{{需要帮助}}');
-        insertItem('{{CmPermission}}');
-        insertItem('__TOC__', 'TOC');
+        insertItem('{{正在施工|~~~~}}\n', '{{正在施工}}');
+        insertItem('{{需要翻译}}\n', '{{需要翻译}}');
+        insertItem('{{需要帮助}}\n', '{{需要帮助}}');
+        insertItem('==引用与注释==\n{{reflist|30em}}\n', '引用与注释');
+        insertItem('{{CmPermission}}\n', '{{CmPermission}}');
+        insertItem('__TOC__\n', 'TOC');
 
         var infoboxDropDown = createGroup('infoboxDropDown', 'Infobox');
 		
