@@ -169,6 +169,55 @@ $(function () {
 
 }}
 */});
+        
+        var infoboxLocation = toMultiLineString(function(){
+            /*{{Infobox location
+| 地名     = 
+| 图像     = 
+| 图像信息 = 
+
+| 发音     = 
+| 别名     = 
+| 其他译名 = 
+| 世界     = 
+| 星系     = 
+| 宇宙     = 
+| 神瑛     = 
+| 神能     = 
+| 神潭     = 
+| 涉及书目 = 
+
+| 类型     = 
+| 所属市县 = 
+| 所属公国 = 
+| 所属区域 = 
+| 所属国家 = 
+| 首都     = 
+| 首府     = 
+| 政体     = 
+| 统治者   = 
+| 所有者   = 
+| 主要民族 = 
+| 主要宗教 = 
+| 官方语言 = 
+| 前身     = 
+| 用途     = 
+
+| 位置     = 
+| 地形     = 
+| 气候     = 
+| 物产资源 = 
+| 经济     = 
+| 文化     = 
+| 特色饮食 = 
+| 传统服饰 = 
+
+| 建立年份 = 
+| 毁灭年份 = 
+| 历代统治者 = 
+| 大事记 = 
+}}*/});
         insertItemToGroup($('#infoboxDropDown'), infoboxCharacter, 'infobox character');
+        insertItemToGroup($('#infoboxDropDown'), infoboxLocation, 'infobox location');
     }, 3000);
 });
