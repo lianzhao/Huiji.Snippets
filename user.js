@@ -4,7 +4,7 @@
 // @version      0.2
 // @description  code snippets for huiji wiki editors
 // @author       lianzhao
-// @match        http://coppermind.huiji.wiki/index.php?title=*&action=edit
+// @match        http://coppermind.huiji.wiki/index.php?title=*&action=edit&*
 // @grant        none
 // ==/UserScript==
 
