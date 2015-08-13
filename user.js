@@ -97,7 +97,7 @@ $(function () {
         var infoboxDropDown = createGroup('infoboxDropDown', 'Infobox');
 		
 		var infoboxCharacter = toMultiLineString(function(){
-			/*{{Infobox character
+			/* {{Infobox character
 | 人名       = 
 | 分类       = 
 | 图像	         = 
@@ -171,7 +171,7 @@ $(function () {
 */});
         
         var infoboxLocation = toMultiLineString(function(){
-            /*{{Infobox location
+            /* {{Infobox location
 | 地名     = 
 | 图像     = 
 | 图像信息 = 
