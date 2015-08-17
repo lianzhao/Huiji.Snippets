@@ -217,7 +217,25 @@ $(function () {
 | 历代统治者 = 
 | 大事记 = 
 }}*/});
+
+var infoboxNobleHouse = toMultiLineString(function(){
+            /* {{Infobox noble house
+| 家族名   = 
+| 图像     = 
+| 图像信息 = 
+| 发音     = 
+| 别名     = 
+| 其他译名 = 
+| 类型     = 
+| 世界     = [[斯卡德瑞尔]]
+| 涉及书目 = [[《执法镕金》]]
+
+| 祖先    = 
+| 族长    = 
+| 前任族长    = 
+}}*/});
         insertItemToGroup($('#infoboxDropDown'), infoboxCharacter, 'infobox character');
         insertItemToGroup($('#infoboxDropDown'), infoboxLocation, 'infobox location');
+        insertItemToGroup($('#infoboxDropDown'), infoboxNobleHouse, 'infobox noble house');
     }, 3000);
 });
