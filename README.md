@@ -8,4 +8,4 @@ snippets for Huiji source code editor
 随着灰机不断调整，本程序可能随时实效。
 
 ## License
-[MIT License](LICENSE)
+[MIT](LICENSE)
