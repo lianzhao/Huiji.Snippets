@@ -10,7 +10,7 @@ https://greasyfork.org/en/scripts/11611-huiji-snippets-coppermind
 * Please install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) first
 
 ## NOTES
-随着灰机不断调整，本程序可能随时实效。
+随着灰机不断调整，本程序可能随时失效。
 
 ## License
 [MIT](LICENSE)
