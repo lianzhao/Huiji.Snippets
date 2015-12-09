@@ -8,7 +8,7 @@
 // @grant        none
 // ==/UserScript==
 
-$(function () {
+window.onload = function () {
     function insertAtCaret(areaId, text) {
         var txtarea = document.getElementById(areaId);
         var scrollPos = txtarea.scrollTop;
@@ -240,4 +240,4 @@ var infoboxNobleHouse = toMultiLineString(function(){
         insertItemToGroup($('#infoboxDropDown'), infoboxLocation, 'infobox location');
         insertItemToGroup($('#infoboxDropDown'), infoboxNobleHouse, 'infobox noble house');
     }, 3000);
-});
+}
